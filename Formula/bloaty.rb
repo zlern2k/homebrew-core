@@ -14,6 +14,6 @@ class Bloaty < Formula
   test do
     # Bother. The release tarball doesn't include the tests. Just verify
     # that bloaty can run on itself without crashing.
-    system "/usr/local/Cellar/bloaty/1.0/bloaty", "/usr/local/Cellar/bloaty/1.0/bloaty"
+    system bin/"bloaty", bin/"bloaty"
   end
 end
